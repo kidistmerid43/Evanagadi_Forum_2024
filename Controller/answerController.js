@@ -15,7 +15,7 @@ async function answerQuestion(req, res) {
   } catch (error) {
     return res
       .status(StatusCodes.INTERNAL_SERVER_ERROR)
-      .json({ msg: "Something went wrong. Please try again laterll." });
+      .json({ msg: "Something went wrong. Please try again later." });
   }
 }
 module.exports = { answerQuestion };
