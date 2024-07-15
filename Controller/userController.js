@@ -83,7 +83,7 @@ async function login(req, res) {
     // Define options
     // const options = { expiresIn: "1d" };
     // Create the token
-    const token = jwt.sign({ username, userid }, "secret", {
+    const token = jwt.sign({ username, userid }, secret, {
       expiresIn:"1d"
       // options
     });

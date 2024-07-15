@@ -6,12 +6,12 @@ const {
   question,
   selectquestion,
   selectsinglequestion,
-  selectansawer,
+  
 } = require("../Controller/questionController");
 questionRouter.post("/askquestion", question);
 questionRouter.get("/getquestions", selectquestion);
 questionRouter.get("/selectsinglequestion", selectsinglequestion);
-questionRouter.get("/selectansawer", selectansawer);
+
 
 module.exports = questionRouter;
 
